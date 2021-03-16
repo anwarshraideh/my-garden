@@ -1,0 +1,100 @@
+*
+{
+    font-family: "Roboto";
+}
+
+body
+{
+    width: 960%;
+}
+
+header
+{
+    background-color: #3f8f8d;
+    height: 70px;
+}
+
+h1
+{
+    padding-top: 20px;
+    margin-left: 550px;
+}
+
+#container
+
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 380px;
+
+}
+#formSection
+{
+ margin-top: 70px;
+}
+
+label
+{
+    display: block;
+    
+    font-weight: 800;
+}
+ #image
+{
+    width:176px;
+    height: 19px;
+}
+
+
+#submit
+{
+  background-color:#609c4d;
+  margin-left: 25px;
+  color: white;
+  font-size: 14px;
+}
+
+#clearbutton
+{
+    background-color: #ac0d0d;
+    color: white;
+  font-size: 14px;
+}
+
+#tableSection
+{
+    
+    width: 20%;
+    margin-left: 20px;
+    
+    
+}
+
+
+
+tr{
+    border-width:2px;
+    border-color: white;
+
+}
+
+th
+{
+    background-color: #ffc0d0;
+    text-align: center ;
+    height: 40px;
+}
+
+td
+{
+    background-color: #f6b8d1 ;
+    text-align: center ;
+
+}
+
+fieldset
+{
+    border-style: dotted;
+}
+
