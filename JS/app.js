@@ -9,9 +9,9 @@ let tbodyEle = document.createElement( 'tbody' );
 tableEle.appendChild( tbodyEle );
 
 
-function Garden( name,image,season ) {
-  this.name=name;
-  this.image =`/img/${image}.jpeg`;
+function Garden( name, image, season ) {
+  this.name = name;
+  this.image = `/img/${image}.jpeg`;
   this.season = season;
 
 
@@ -25,10 +25,10 @@ function handleSubmission( event ) {
 
   let name = event.target.name.value;
   let image = event.target.image.value;
-  let Season= event.target.Season.value;
+  let Season = event.target.Season.value;
 
-  new Garden( name,image,Season );
-  localStorage.setItem( 'roses',JSON.stringify( arrOfRoses ) );
+  new Garden( name, image, Season );
+  localStorage.setItem( 'roses', JSON.stringify( arrOfRoses ) );
   renderTable();
 
 
@@ -69,15 +69,15 @@ function renderTable() {
 
     let imageEle = document.createElement( 'img' );
     td1.appendChild( imageEle );
-    imageEle.setAttribute( 'src' , arrOfRoses[index].image );
-    imageEle.setAttribute('style','width:15% ; height:90px;');
+    imageEle.setAttribute( 'src', arrOfRoses[index].image );
+    imageEle.setAttribute( 'style', 'width:15% ; height:90px;' );
 
 
-    let td2 =document.createElement( 'td' );
+    let td2 = document.createElement( 'td' );
     fRow.appendChild( td2 );
     td2.textContent = arrOfRoses[index].name;
 
-    let td3 =document.createElement( 'td' );
+    let td3 = document.createElement( 'td' );
     fRow.appendChild( td3 );
     td3.textContent = arrOfRoses[index].season;
 
@@ -95,16 +95,18 @@ function checkLs() {
 
 }
 
-function clear(event) {
+function clear( event ) {
 
-    event.preventDefault();
+  event.preventDefault();
   localStorage.clear();
   checkLs();
   location.reload();
 
 }
 
+// eslint-disable-next-line no-undef
 clearbutton.addEventListener( 'click', clear );
-form1.addEventListener( 'submit',handleSubmission );
+// eslint-disable-next-line no-undef
+form1.addEventListener( 'submit', handleSubmission );
 header();
 checkLs();
